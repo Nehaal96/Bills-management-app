@@ -82,7 +82,7 @@ class BillCard extends React.Component {
 
         <View style={styles.descriptionContainer}>
           <Text style={styles.descriptionLabel}>{data.description}</Text>
-          <Text style={styles.dateLabel}>Created at {moment(data.date).format('DD MMM, YYYY')}</Text>
+          <Text style={styles.dateLabel}>Created at {moment(data.date, 'MM-DD-YYYY').format('DD MMM, YYYY')}</Text>
         </View>
         <Text style={styles.amountLabel}>{userCurrency} {data.amount}</Text>
       </View> 
